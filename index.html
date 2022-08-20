@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+        <button class="pause"></button>
+      </div>
+      <ul class="play-list">
+        <li class="play-item">
+          <div class="play-item-clik">Aqua Caelestis</div>
+          <div class="play-mini"></div>
+        </li>
+        <li class="play-item">
+          <div class="play-item-clik">Ennio Morricone</div>
+          <div class="play-mini"></div>
+        </li>
+        <li class="play-item">
+          <div class="play-item-clik">River Flows In You</div>
+          <div class="play-mini"></div>
+        </li>
+        <li class="play-item">
+          <div class="play-item-clik">Summer Wind</div>
+          <div class="play-mini"></div>
+        </li>
+      </ul>
+      <audio class="audio" src="./assets/sounds/Aqua Caelestis.mp3" ></audio>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" placeholder="Minsk"/>
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature">25 C</span>
+        <span class="weather-description">пасмурно</span>
+      </div>
+      <div class="wind">Скорость ветра: 5 м/с</div>
+      <div class="humidity">Влажность : 59%</div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon" onClick={setBackround()}></button>
+      <button class="slide-next slider-icon" onClick={setBackround()}></button>
+    </div>
+    <time class="time">13:21:15</time>
+    <script>
+    
+    </script>
+    <date class="date"> Воскресенье,14 августа</date>
+    <div class="greeting-container">
+      <span class="greeting">Добрый день,</span>
+      <input type="text" class="name"  placeholder="[введите имя]"/>
+    </div>
+    
+  </main>
+  <footer class="footer">
+    <button class="change-quote"></button>
+    <div>
+      <div class="social__icon">
+        <a class="icon__rsschool" href="https://rs.school/js-stage0/" target="_blank"><img
+          src="./assets/rssvg.png" alt="rss school" width="80" height="30"></a>
+  <a class="icon__github" href="https://github.com/natalka1996" target="_blank"><img
+          src="./assets/github.png" alt="Logo GitHub" width="30" height="30"></a> 
+      </div>
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+  <script src="player.js"></script>
+</body>
+</html>
