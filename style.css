@@ -16,19 +16,19 @@
     font-size: 16px;
     color: #fff;
     text-align: center;
-    background: url("../assets/img/morning/01.jpg") center/cover, rgba(0, 0, 0, 0.5);
+    background: url("./img/bg.jpg") center/cover, rgba(0, 0, 0, 0.5);
     background-blend-mode: multiply;
     transition: background-image 1s ease-in-out;
   }
   .one {
-    background-image: url(../assets/img/evening/08.jpg);
+    background-image: url(./img/02.jpg);
   }
   .two {
-    background-image: url(../assets/img/evening/02.jpg);
+    background-image: url(./img/03.jpg);
   
   }
   .three { 
-    background-image:url(../assets/img/day/07.jpg) ;
+    background-image:url(./img/04.jpg) ;
   }
   
   .header {
