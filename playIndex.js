@@ -10,7 +10,7 @@ const songs = ['Aqua Caelestis', 'Ennio Morricone', 'River Flows In You', 'Summe
 let songIndex = 0
 function loadSong(item ) {
   title.innerHtml = item;
-audio.src = `assets/sounds/${item}.mp3`
+audio.src = `sounds/${item}.mp3`
 }
 loadSong(songs[songIndex]);
 
